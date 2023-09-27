@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Form</title>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Address Form</h2>
+        <form class="row g-3" action="" method="post">
+            <div class="col-12">
+                <label for="inputPermanentAddress" class="form-label">Permanent Address</label>
+                <input type="text" class="form-control" id="inputPermanentAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPermanentCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputPermanentCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPermanentState" class="form-label">State</label>
+                <select id="inputPermanentState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputPermanentZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputPermanentZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="sameAsPermanent" checked>
+                    <label class="form-check-label" for="sameAsPermanent">
+                        Same as Permanent address
+                    </label>
+                </div>
+            </div>
+            <div id="presentAddress" class="col-12" style="display: none;">
+                <div class="mb-3">
+                    <label for="inputPresentAddress" class="form-label">Present Address</label>
+                    <input type="text" class="form-control" id="inputPresentAddress" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputPresentCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputPresentCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPresentState" class="form-label">State</label>
+                        <select id="inputPresentState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputPresentZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputPresentZip">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <!-- JavaScript files -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
